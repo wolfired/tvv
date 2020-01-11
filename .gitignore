@@ -1,0 +1,6 @@
+/.vscode/
+/*built/
+/bin/
+/built/
+/node_modules/
+/bridge/svpng.inc

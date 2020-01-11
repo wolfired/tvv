@@ -1,0 +1,28 @@
+{
+  "name": "tvv",
+  "version": "0.0.1",
+  "description": "A Web Tv",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf ./bin/*; ./scripts.sh bridge clean; ./scripts.sh ffmpeg clean",
+    "build_web": "./scripts.sh bridge build; tsc -m amd; cp web/* bin/",
+    "build_node": "./scripts.sh bridge build; tsc; cp web/* bin/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolfired/tvv.git"
+  },
+  "author": "LinkWu <wjianl@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wolfired/tvv/issues"
+  },
+  "homepage": "https://github.com/wolfired/tvv#readme",
+  "devDependencies": {
+    "@types/node": "^12.12.6",
+    "@types/ws": "^6.0.3"
+  },
+  "dependencies": {
+    "ws": "^7.2.0"
+  }
+}

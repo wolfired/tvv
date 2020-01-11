@@ -1,0 +1,12 @@
+/.vscode/
+/*_out/
+/bridge/
+/ffmpeg/
+/node_modules/
+/scripts/
+/weg/
+/.gitignore
+/.npmignore
+/package-lock.json
+/scripts.sh
+/tsconfig.json
